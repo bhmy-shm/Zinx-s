@@ -1,0 +1,12 @@
+syntax="proto3";
+option go_package = "ZinX-shm/services";
+
+message MsgRequest {
+  int32 Message_ID = 1;  //客户端指定的ID号
+  int32 Message_Len = 2;  //客户端发送的消息长度
+  bytes Message_Data = 3; //客户端发送的消息数据
+}
+
+message MsgResponse {
+  bytes Response_Data =1; //服务端返回的消息内容
+}
