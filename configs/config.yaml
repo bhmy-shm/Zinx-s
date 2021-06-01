@@ -1,0 +1,18 @@
+Server:
+  Name: demo-server
+  Host: 127.0.0.1
+  TcpPort: 7777
+  MaxConn: 3
+  Version: V0.9
+
+  #心跳监测的间隔时间
+  HeartBeatTime: 5
+
+  #传递的数据包最大值
+  MaxPackageSize: 4096
+
+  #允许开启几个worker
+  WorkerPoolSize: 10
+
+  #每一个worker允许处理多少条Request请求，channel的长度
+  MaxWorkerTaskLen: 1024
